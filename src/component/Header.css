@@ -1,0 +1,61 @@
+.header {
+    display:flex;
+
+    /* to separate out each component */
+    justify-content: space-between;
+
+    align-items: center;
+
+    /* when we scroll it is stick to top:0 */
+    position: sticky;
+    top: 0;
+
+    background-color: white;
+    z-index: 100;
+    width: 100%;
+}
+
+.header_icon {
+    object-fit: contain;
+    height: 100px;
+    margin-left: 20px;
+}
+
+.header_center {
+    display: flex;
+    align-items: center;
+
+    /* to display it in center, flex:1 means ... */
+    flex:1;
+    max-width: fit-content;
+
+    padding: 10px;
+    height:30px;
+    border: 1px solid lightgrey;
+    border-radius: 999px;
+}
+
+
+.header_center > input {
+
+    /* we dont want to show default border of input */
+    border: none;
+    
+    padding: 10px;
+
+    /* to remove border, see it by clicking input by commenting this prop  */
+    outline-width: 0;
+
+    /* width: 250px; */
+}
+
+.header_right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* separate out little more */
+    width: 15vw;
+
+    margin-right: 80px;
+}
